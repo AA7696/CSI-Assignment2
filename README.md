@@ -1,12 +1,53 @@
-# React + Vite
+# 🧠 Todo Application Quadrant-Based Kanban Board 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, drag-and-drop enabled Todo Kanban board built with **React**, **Tailwind CSS**, and **@dnd-kit/core**, designed to help you prioritize your tasks based on **Importance** and **Urgency** using the **Eisenhower Matrix**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+✅ Add new tasks with importance and urgency  
+✏️ Edit task details  
+✔️ Mark tasks as completed  
+🗑️ Delete tasks  
+🔄 Drag and drop tasks between quadrants  
+💾 Persistent storage using `localStorage`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Eisenhower Matrix Explained
+
+Tasks are organized into 4 quadrants:
+
+| Quadrant | Meaning                          | Actions                |
+|----------|----------------------------------|------------------------|
+| Q1       | ✅ Important & Urgent            | Do Immediately         |
+| Q2       | 🕐 Not Important but Urgent      | Delegate if possible   |
+| Q3       | 📅 Important but Not Urgent      | Plan & Schedule        |
+| Q4       | 🧹 Not Important & Not Urgent    | Eliminate or Ignore    |
+
+---
+
+## 🚀 How It Works
+
+1. **Add a Task**  
+   Fill in the task text, select "Important" and/or "Urgent", and hit **Add**.
+
+2. **Task Cards**  
+   Each task appears in one of the 4 quadrants based on its priority.
+
+3. **Drag and Drop**  
+   - Drag any task card into another quadrant to change its priority.
+   - This updates the `important` and `urgent` flags.
+
+4. **Edit / Delete / Mark as Done**  
+   - Use ✏️ to edit task text or change its priority.
+   - Use ✔️ checkbox to mark the task as complete.
+   - Use ✕ to delete the task.
+
+5. **Persistence**  
+   All tasks are saved in your browser’s `localStorage`.
+
+---
+
+
