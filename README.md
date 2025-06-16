@@ -1,4 +1,4 @@
-# 🧠 Todo Application Quadrant-Based Kanban Board 
+# 🧠 Todo Application With Quadrant-Based Kanban Board 
 
 A modern, drag-and-drop enabled Todo Kanban board built with **React**, **Tailwind CSS**, and **@dnd-kit/core**, designed to help you prioritize your tasks based on **Importance** and **Urgency** using the **Eisenhower Matrix**.
 
